@@ -4,20 +4,45 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Lister from './screen/Lister';
 import Login from './screen/Login';
+import AddAdmin from './screen/AddAdmin'
 
-//ReactDOM.render(<App />, document.getElementById('root'));
-var type = "project";
+var type = "administrator";
 
 class WindowManager extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { windows: [<Lister name={type} />] };   
+        this.handleBackWindow = this.handleBackWindow.bind(this)
+    }
     renderBack() {
+        return (
+            <button id="back" onClick={this.handleBackWindow}></button>
+        );
+    }
+    handleBackWindow(e) {
+        console.log(e)
+        this.setState({
+            windows: this.state.windows.pop()
+        })
+    }
 
+    nextWindow(window) {
+        this.setState({
+            window: this.state.windows.concat(window)
+        })
+    }
+
+    renderWindow() {
+        return this.state.windows[this.state.windows.length - 1]; 
     }
 
     render() {
-//        return <Lister name={type}/>;
-        return <Login />;
+    return (<div>{this.renderWindow()}</div>);
     }
 }
+
+
+
 
 ReactDOM.render(<WindowManager />, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
