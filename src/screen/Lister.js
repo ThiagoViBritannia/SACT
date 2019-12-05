@@ -1,4 +1,5 @@
 import React from 'react';
+import Popup from 'reactjs-popup'
 import addSymbol from '../css/assets/add-symbol.png';
 import '../css/Lister.css';
 import * as db from '../db/Table';
@@ -29,8 +30,16 @@ export class Add extends React.Component {
   render () {
     return (
       <div>
-        {this.renderDialog()}
-        <button className='add'><img alt="add" src={addSymbol}></img></button>
+          {this.renderDialog()}
+          <Popup
+            trigger={<button className='add'><img alt="add" src={addSymbol}></img></button>}
+            modal
+            closeOnDocumentClick
+          >
+            <span> Modal content </span>
+          </Popup>
+
+        
       </div>
     )
   }
