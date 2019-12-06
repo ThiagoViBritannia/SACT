@@ -6,12 +6,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0",
-<<<<<<< HEAD
     "reactjs-popup": "^1.5.0",
     "typescript": "^3.7.3"
-=======
-    "reactjs-popup": "^1.5.0"
->>>>>>> 2aa114172e4fba200b8c70af1f972296d86d2c3e
   },
   "scripts": {
     "start": "react-scripts start",

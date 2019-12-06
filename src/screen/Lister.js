@@ -1,7 +1,10 @@
 import React from 'react';
 import Popup from 'reactjs-popup'
+
 import addSymbol from '../css/assets/add-symbol.png';
+
 import '../css/Lister.css';
+
 import * as db from '../db/Table';
 
 
@@ -27,6 +30,10 @@ export class Add extends React.Component {
     return (<h2 className='topic' id="search">Adicionar {db[this.props.data].name}</h2>);
   }
 
+  renderEdit(key) {
+
+  }
+
   render () {
     return (
       <div>
@@ -36,7 +43,13 @@ export class Add extends React.Component {
             modal
             closeOnDocumentClick
           >
-            <span> Modal content </span>
+            <div style={{
+              width: 360 + 'px',
+              height: '960px',
+              backgroundColor: 'black', 
+            }}
+            
+            />
           </Popup>
 
         
@@ -71,11 +84,11 @@ function List(props) {
 }
 function Project(props) {
   return (
-    <div className="Lister">
-      <h1>{db[props.name].name}</h1>
-      <Search data={props.name}/>
-      <Add data={props.name}/>
-      <List data={props.name}/>
+    <div className="Lister"> 
+      <h1>{db[props.type].type}</h1>
+      <Search data={props.type}/>
+      <Add data={props.type} controller={props.controller}/>
+      <List data={props.type}/>
     </div>
   );
 }

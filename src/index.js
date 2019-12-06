@@ -1,17 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
-import * as serviceWorker from './serviceWorker';
+
 import Lister from './screen/Lister';
 import Login from './screen/Login';
-import AddAdmin from './screen/AddAdmin'
+import Add from './screen/Add';
 
-var type = "administrator";
+import * as serviceWorker from './serviceWorker';
+import * as DBValues from './db/Values';
+
+
 
 class WindowManager extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { windows: [<Lister name={type} />] };   
+        this.state = { 
+            windows: [
+                <Lister type={DBValues.PROJECT} controller={this.nextWindow} />, 
+//                <Add type={DBValues.ADMIN}/>,
+//                <Login />
+            ] 
+        };   
         this.handleBackWindow = this.handleBackWindow.bind(this)
     }
     renderBack() {
@@ -20,9 +30,8 @@ class WindowManager extends React.Component {
         );
     }
     handleBackWindow(e) {
-        console.log(e)
         this.setState({
-            windows: this.state.windows.pop()
+            windows: this.state.windows.slice(0, this.state.windows.length - 1),
         })
     }
 
@@ -37,18 +46,11 @@ class WindowManager extends React.Component {
     }
 
     render() {
-    return (<div>{this.renderWindow()}</div>);
+        return (<div>{this.renderBack()}{this.renderWindow()}</div>);
     }
 }
 
-<<<<<<< HEAD
-ReactDOM.render(<Lister name={type} />, document.getElementById('root'));
-=======
-
-
-
 ReactDOM.render(<WindowManager />, document.getElementById('root'));
->>>>>>> 2aa114172e4fba200b8c70af1f972296d86d2c3e
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA

@@ -4,7 +4,6 @@ h1 {
 
   /* Font Settings */
   font-size: 50px;
-  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
   font-weight: bold;
   line-height: 1.6;
 
@@ -20,7 +19,6 @@ h2 {
   margin: 0px;
 
   /* Font Settings */
-  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
   font-size: 45px;
   line-height: 1.78;
   font-weight: normal;
@@ -31,6 +29,10 @@ h2 {
 body {
   background-image: url('./css/assets/paper.png');
   background-size: 100%;
+}
+
+.root {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
 }
 /*
 input[type="text"] {
