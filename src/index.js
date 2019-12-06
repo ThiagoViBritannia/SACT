@@ -17,9 +17,9 @@ class WindowManager extends React.Component {
         super(props);
         this.state = { 
             windows: [
+                <Add type={DBValues.ADMIN}/>,
+                <Login />,
                 <Lister type={DBValues.PROJECT} controller={this.nextWindow} />, 
-//                <Add type={DBValues.ADMIN}/>,
-//                <Login />
             ] 
         };   
         this.handleBackWindow = this.handleBackWindow.bind(this)

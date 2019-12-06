@@ -36,7 +36,7 @@ export class Add extends React.Component {
 
   render () {
     return (
-      <div>
+      <>
           {this.renderDialog()}
           <Popup
             trigger={<button className='add'><img alt="add" src={addSymbol}></img></button>}
@@ -51,9 +51,7 @@ export class Add extends React.Component {
             
             />
           </Popup>
-
-        
-      </div>
+      </>
     )
   }
 }
