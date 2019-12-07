@@ -1,13 +1,27 @@
 .Lister {
   padding-top: 3em;
 }
-
+.searcher-container {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .searcher {
-  max-width: 630px;
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 420px;
+    max-width: 630px;
+    border-color: transparent;
+    padding: 0px;
 }
 
 #search {
   display: inline;
+}
+
+#search-box {
+    width: 600px;
 }
 
 .popup-content {
@@ -15,5 +29,18 @@
 }
 
 #box-data {
-    width: 72%;
+    width: 80%;
+}
+
+.data {
+    font-size: 30px;
+    color: #676060;
+    line-height: 1.67;
+}
+
+.type {
+    font-size: 35px;
+    line-height: 2.29;
+    font-weight: 600;
+    color: gray;
 }

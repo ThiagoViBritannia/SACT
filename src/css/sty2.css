@@ -95,7 +95,7 @@ input[type="text"] {
      background-color: #ffffff;
   }
   body{
-    background: url("./papel.png");
+    background: url("../css/assets/papel.png");
     background-size: 100%;
   }
 

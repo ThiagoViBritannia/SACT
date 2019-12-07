@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import './index.css';
-
-import exit from './css/assets/exit.png';
-
+import * as serviceWorker from './serviceWorker';
 import Lister from './screen/Lister';
 import Login from './screen/Login';
-import Add from './screen/Add';
+import Seção from './screen/Seção';
+import AddAdmin from './screen/AddAdmin'
 
-class WindowManager extends React.Component {atua
+var type = "administrator";
+
+class WindowManager extends React.Component {
     constructor(props) {
         super(props);
         this.state = { windows: [<Lister name={type} />, <Seção />] };   

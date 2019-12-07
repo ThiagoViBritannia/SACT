@@ -1,5 +1,6 @@
 h1 {
     /* Size Configs */
+    width: fit-content;
     margin: 0px;
 
     /* Font Settings */
@@ -33,9 +34,12 @@ body {
 
 .root {
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
+    margin: 0px;
+    padding: 0px;
 }
 
 #back {
+    display: inline;
     padding: 0px;
     margin: 0px;
 }

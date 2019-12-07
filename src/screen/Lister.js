@@ -4,6 +4,9 @@ import Popup from 'reactjs-popup';
 import Box from './component/Box';
 import AddButton from './component/AddButton';
 
+import pencil from '../css/assets/edit-symbol.png';
+import bloom from '../css/assets/search-symbol.png'
+
 import '../css/Lister.css';
 
 import * as db from '../db/Table';
@@ -15,8 +18,10 @@ class Search extends React.Component {
     return (
       <div className='search-projects'>
         <h2 className='topic'>Pesquisar {db[this.props.data].name}</h2>
-        <input className='searcher' type='text'></input>
-        <button style={{display: 'inline'}}>Q</button>
+        <Box left='15px' top='10px' bottom='10px' right='5px' id='search-box'>
+          <input className='searcher' type='text'/>
+          <img style={{display: 'inline'}} alt='search' src={bloom}></img>
+        </Box>
       </div>
     );
   }
@@ -41,8 +46,6 @@ export class Add extends React.Component {
           modal
           closeOnDocumentClick
         >
-          
-          />
         </Popup>
       </>
     )
@@ -55,14 +58,14 @@ function List(props) {
       return (
         <tr key={value[props.data.key]}>
           {db[props.data].types.map(
-            att => <td key={att.toString()}> {value[att]} </td>
+            att => <td className='data' key={att.toString()}> {value[att]} </td>
           )}
-          <td><button>E</button></td>
+          <td className='data'><img src={pencil}/></td>
         </tr>
       );
   });
   const header = db[props.data].header.map(
-    (column) => <th>{column}</th>
+    (column) => <th className='type'>{column}</th>
   );
   return (
     <Box boder='10px' right='48px' top='4px' left='45px' id='box-data'> 

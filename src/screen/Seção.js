@@ -1,5 +1,5 @@
 import React from 'react';
-import  '../css/seçao.css';
+import  '../css/sty2.css';
 import mais from '../css/assets/mais.png';
 import lix from '../css/assets/lix.png';
 class Seção extends React.Component{;
