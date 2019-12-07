@@ -11,7 +11,7 @@ var type = "administrator";
 class WindowManager extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { windows: [<Lister name={type} />] };   
+        this.state = { windows: [<Lister name={type} />, <Login />] };   
         this.handleBackWindow = this.handleBackWindow.bind(this)
     }
     renderBack() {
@@ -41,14 +41,7 @@ class WindowManager extends React.Component {
     }
 }
 
-<<<<<<< HEAD
-ReactDOM.render(<Lister name={type} />, document.getElementById('root'));
-=======
-
-
-
 ReactDOM.render(<WindowManager />, document.getElementById('root'));
->>>>>>> 2aa114172e4fba200b8c70af1f972296d86d2c3e
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
