@@ -1,0 +1,15 @@
+.AddButton {
+  height: 48px;
+  width: 48px;
+  border: solid 1px #707070;
+  border-radius: 50%;
+  padding: 0px;
+  background-color: #cdcdcd;
+  text-align: center;
+}
+
+.AddButton img { /* center the image */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

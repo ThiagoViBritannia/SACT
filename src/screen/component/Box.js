@@ -1,24 +1,25 @@
 import React from 'react'
-
+import '../../css/Box.css'
 
 
 class Box extends React.Component {
   constructor(props) {
     super(props);
-    this.renderContent = this.renderContent.bind(this)
     this.props = props;
-  }
-
-  renderContent() {
-    return '';
   }
 
   render() {
     return (
-      <div className='Box'>
+      <div className='Box' id={this.props.id} style={{ 
+          borderRadius: this.props.boder
+        }} >
         <div style={{
+          paddingTop: this.props.top? this.props.top : 'auto',
+          paddingRight: this.props.right? this.props.right : 'auto', 
+          paddingBottom: this.props.bottom? this.props.bottom : 'auto',
+          paddingLeft: this.props.left? this.props.left : 'auto',
         }}>
-          {this.renderContent()}
+          {this.props.children}
         </div>
       </div>
     );

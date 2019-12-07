@@ -1,5 +1,5 @@
 .Box {
     border-radius: 20px;
-    border: solid 1px var(--warm-grey);
+    border: solid 1px grey;
     background-color: #ffffff; 
 }

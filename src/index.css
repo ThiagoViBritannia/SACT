@@ -1,39 +1,45 @@
 h1 {
-  /* Size Configs */
-  margin: 0px;
+    /* Size Configs */
+    margin: 0px;
 
-  /* Font Settings */
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 1.6;
+    /* Font Settings */
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.6;
 
-  /* Corlors Settings*/
-  color: #0000fb;
+    /* Corlors Settings*/
+    color: #0000fb;
 
 } 
 
 h2 {
-  /* Size Configs */
-  width: fit-content;
-  height: 67px;
-  margin: 0px;
+    /* Size Configs */
+    width: fit-content;
+    height: 67px;
+    margin: 0px;
 
-  /* Font Settings */
-  font-size: 45px;
-  line-height: 1.78;
-  font-weight: normal;
+    /* Font Settings */
+    font-size: 45px;
+    line-height: 1.78;
+    font-weight: normal;
 
-  /* Corlors Settings*/
-  color: #0000fb;
+    /* Corlors Settings*/
+    color: #0000fb;
 }
 body {
-  background-image: url('./css/assets/paper.png');
-  background-size: 100%;
+    background-image: url('./css/assets/paper.png');
+    background-size: 100%;
 }
 
 .root {
-  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
 }
+
+#back {
+    padding: 0px;
+    margin: 0px;
+}
+
 /*
 input[type="text"] {
     opacity: 0.90;
