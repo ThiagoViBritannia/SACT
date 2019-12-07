@@ -49,7 +49,7 @@ class Seção extends React.Component{;
 </div> <table align = "center" style={{marginTop:"5%",width:"70%"}}>
       <tr align="center">
         <td style={{width:"100%"}}>
-
+ 
         <form onSubmit={this.handleSubmit}>
         
         {this.state.shareholders.map((shareholder, idx) => (
