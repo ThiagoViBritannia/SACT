@@ -1,7 +1,11 @@
 import React from 'react';
-import Popup from 'reactjs-popup'
-import addSymbol from '../css/assets/add-symbol.png';
+import Popup from 'reactjs-popup';
+
+import Box from './component/Box';
+import AddButton from './component/AddButton';
+
 import '../css/Lister.css';
+
 import * as db from '../db/Table';
 
 
@@ -19,28 +23,28 @@ class Search extends React.Component {
 }
 
 export class Add extends React.Component {
-  handleClick() {
-
-  }
   
   renderDialog() {
     return (<h2 className='topic' id="search">Adicionar {db[this.props.data].name}</h2>);
   }
 
+  renderEdit(key) {
+
+  }
+
   render () {
     return (
-      <div>
-          {this.renderDialog()}
-          <Popup
-            trigger={<button className='add'><img alt="add" src={addSymbol}></img></button>}
-            modal
-            closeOnDocumentClick
-          >
-            <span> Modal content </span>
-          </Popup>
-
-        
-      </div>
+      <>
+        {this.renderDialog()}
+        <Popup
+          trigger={<AddButton />}
+          modal
+          closeOnDocumentClick
+        >
+          
+          />
+        </Popup>
+      </>
     )
   }
 }
@@ -61,21 +65,21 @@ function List(props) {
     (column) => <th>{column}</th>
   );
   return (
-    <div>
-      <table>
+    <Box boder='10px' right='48px' top='4px' left='45px' id='box-data'> 
+      <table > 
         <thead><tr>{header}</tr></thead>
         <tbody>{values}</tbody>
       </table>
-    </div>
+    </Box> 
   );
 }
 function Project(props) {
   return (
-    <div className="Lister">
-      <h1>{db[props.name].name}</h1>
-      <Search data={props.name}/>
-      <Add data={props.name}/>
-      <List data={props.name}/>
+    <div className="Lister"> 
+      <h1>{db[props.type].name}</h1>
+      <Search data={props.type}/>
+      <Add data={props.type} controller={props.controller}/>
+      <List data={props.type}/>
     </div>
   );
 }
