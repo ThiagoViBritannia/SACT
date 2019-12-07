@@ -48,7 +48,7 @@ class WindowManager extends React.Component {
   }
 
   render() {
-    return (<div>{this.renderBack()}{this.renderWindow()}</div>);
+    return (<>{this.renderBack()}<div style={{display: 'inline'}}>{this.renderWindow()}</div></>);
   }
 }
 
