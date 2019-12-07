@@ -46,9 +46,26 @@ class WindowManager extends React.Component {
   renderWindow() {
     return this.state.windows[this.state.windows.length - 1]; 
   }
+  renderSeaseonInfo() {
+
+  }
 
   render() {
-    return (<>{this.renderBack()}<div style={{display: 'inline'}}>{this.renderWindow()}</div></>);
+    return (
+      <table style={{width: '100%'}}>
+        <tr>
+          <td>
+            {this.renderBack()}
+          </td>
+          <td style={{width: '80%'}}>
+            {this.renderWindow()}
+          </td>
+          <td>
+
+          </td>
+        </tr>
+      </table>
+    );
   }
 }
 
