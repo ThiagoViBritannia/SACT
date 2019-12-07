@@ -4,6 +4,8 @@ import Popup from 'reactjs-popup';
 import Box from './component/Box';
 import AddButton from './component/AddButton';
 
+import pencil from '../css/assets/edit-symbol.png';
+
 import '../css/Lister.css';
 
 import * as db from '../db/Table';
@@ -41,8 +43,6 @@ export class Add extends React.Component {
           modal
           closeOnDocumentClick
         >
-          
-          />
         </Popup>
       </>
     )
@@ -57,12 +57,12 @@ function List(props) {
           {db[props.data].types.map(
             att => <td key={att.toString()}> {value[att]} </td>
           )}
-          <td><button>E</button></td>
+          <td className='data'><img src={pencil}/></td>
         </tr>
       );
   });
   const header = db[props.data].header.map(
-    (column) => <th>{column}</th>
+    (column) => <th className='type'>{column}</th>
   );
   return (
     <Box boder='10px' right='48px' top='4px' left='45px' id='box-data'> 

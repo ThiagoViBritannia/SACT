@@ -17,3 +17,9 @@
 #box-data {
     width: 72%;
 }
+
+.data {
+    font-size: 30px;
+    color: #676060;
+    line-height: 1.67;
+}

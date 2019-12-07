@@ -1,5 +1,6 @@
 h1 {
     /* Size Configs */
+    width: fit-content;
     margin: 0px;
 
     /* Font Settings */
@@ -36,6 +37,7 @@ body {
 }
 
 #back {
+    display: inline;
     padding: 0px;
     margin: 0px;
 }

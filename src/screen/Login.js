@@ -23,8 +23,5 @@ function Login() {
       <input type="button" name="login" className="button" id="login" value="Entrar" />
      </div> 
   );
-/*
-<table><tr align="center"> </tr></table>
-*/
 }
 export default Login;
