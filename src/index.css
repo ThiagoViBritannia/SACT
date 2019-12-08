@@ -29,15 +29,25 @@ h2 {
 }
 body {
     background-image: url('./css/assets/paper.png');
-    background-size: 100%;
-}
+    background-size: 100%;}
 
 .root {
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 
+<<<<<<< HEAD
+#back {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -80%;
+}
+
+=======
+>>>>>>> f9f5350619ad4f995742dbb3eb00fec1975d8dbb
 input[type="text"] {
     border-color: transparent;
 }
