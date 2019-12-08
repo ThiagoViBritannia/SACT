@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import * as serviceWorker from './serviceWorker';
+
+
 import Lister from './screen/Lister';
 import Login from './screen/Login';
+<<<<<<< HEAD
 import Seção from './screen/Seção';
 import Dash from './screen/dashboard';
 import Avcad from './screen/AddAval';
@@ -28,23 +30,28 @@ class WindowManager extends React.Component {
             windows: this.state.windows.pop()
         })
     }
+=======
+import WindowManager from './screen/WindowManager';
 
-    nextWindow(window) {
-        this.setState({
-            window: this.state.windows.concat(window)
-        })
-    }
+import * as serviceWorker from './serviceWorker';
+import * as DBValues from './db/Values';
+>>>>>>> 7272041cb9017ee3e2ce673eb41321f9b9fa9a0a
 
-    renderWindow() {
-        return this.state.windows[this.state.windows.length - 1]; 
-    }
 
-    render() {
-    return (<div>{this.renderWindow()}</div>);
-    }
+var type = "administrator";
+
+class Main extends WindowManager {
+  constructor(props) {
+    super(props);
+    this.state = { 
+      windows: [
+        <Login controller={ev => this.nextWindow(<Lister type={DBValues.ADMIN} controller={this.nextWindow}/>)}/>,
+      ] 
+    };   
+  }
 }
 
-ReactDOM.render(<WindowManager />, document.getElementById('root'));
+ReactDOM.render(<Main />, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA

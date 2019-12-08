@@ -1,0 +1,6 @@
+<Popup
+          trigger={<AddButton />}
+          modal
+          closeOnDocumentClick
+        >
+        </Popup>

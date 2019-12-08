@@ -7,24 +7,39 @@ class Box extends React.Component {
     super(props);
     this.props = props;
   }
-
+  
   render() {
     return (
-      <div className='Box' id={this.props.id} style={{ 
-          borderRadius: this.props.boder
-        }} >
-        <div style={{
-          paddingTop: this.props.top? this.props.top : 'auto',
-          paddingRight: this.props.right? this.props.right : 'auto', 
-          paddingBottom: this.props.bottom? this.props.bottom : 'auto',
-          paddingLeft: this.props.left? this.props.left : 'auto',
-        }}>
+      <div className='Box' id={this.props.id}  >
+        <div className='Box-content' style={this.getStyle()}>
           {this.props.children}
         </div>
       </div>
     );
   }
+  getStyle() {
+    const aux = this.props;
+    if (aux.horizontal || aux.vertical) {
+      return {
+        paddingTop: aux.horizontal? aux.horizontal : 'auto',
+        paddingBottom: aux.horizontal? aux.horizontal : 'auto',
+ 
+        paddingLeft: aux.vertical? aux.vertical : 'auto',
+        paddingRight: aux.vertical? aux.vertical : 'auto',
+      }
+    }
 
+    if (aux.bottom || aux.top || aux.right || aux.left) {
+      return {
+        paddingTop: aux.top? aux.top : 'auto',
+        paddingBottom: aux.bottom? aux.bottom : 'auto',
+ 
+        paddingLeft: aux.left? aux.left : 'auto',
+        paddingRight: aux.right? aux.right : 'auto',
+      }
+    }
+
+  }
 }
 
 

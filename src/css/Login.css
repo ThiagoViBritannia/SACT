@@ -9,17 +9,17 @@
 
 }
 
+.Box-content {
+  width: fit-content;
+  height: min-content;
+}
+
 .Login {
- display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto
 }
 
-.field {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 /*
 input[type="text"] {
     border: 0.5px solid  gray;
