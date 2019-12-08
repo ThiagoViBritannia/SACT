@@ -6,6 +6,7 @@ import Lister from './screen/Lister';
 import Login from './screen/Login';
 import Seção from './screen/Seção';
 import Dash from './screen/dashboard';
+import Avcad from './screen/AddAval';
 import AddAdmin from './screen/AddAdmin'
 
 var type = "administrator";
@@ -13,7 +14,7 @@ var type = "administrator";
 class WindowManager extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { windows: [<Lister name={type} />, <Dash />] };   
+        this.state = { windows: [<Lister name={type} />, <Avcad />] };   
         this.handleBackWindow = this.handleBackWindow.bind(this)
     }
     renderBack() {
