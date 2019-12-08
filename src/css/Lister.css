@@ -1,5 +1,5 @@
 .Lister {
-  padding-top: 3em;
+    padding-top: 3em;
 }
 .searcher-container {
     display: inline-block;
@@ -37,7 +37,9 @@
     color: #676060;
     line-height: 1.67;
 }
-
+.Box {
+    width: fit-content;
+}
 .type {
     font-size: 35px;
     line-height: 2.29;

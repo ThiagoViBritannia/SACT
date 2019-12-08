@@ -1,33 +1,19 @@
 import React from 'react';
+
 import  '../css/AddAdmin.css';
-import sair from '../css/assets/exit.png';
-import adm from '../css/assets/admin.png';
+
 
 
 function Header() {
   return (
       <table align ='center' style={{width:'100%'}}>
         <tr>
-          <td align='left'>
-            <div align='left'>
-              <img src={sair} id='admIcon' alt='exit'></img> 
-            </div>
-          </td>
           <td align='center' style={{width:'70%'}}>
             <div align='center'>
               <h3 align='center'>
                 <u>Cadastro de Administrador</u>
               </h3>
             </div>
-          </td>
-          <td>
-            <div align='right'>
-              <div className='loginInfo'>
-                logout
-                <a2><img src={adm} style={{width:'20%'}} alt='admin'></img></a2>
-                ADM   
-              </div>
-            </div> 
           </td>
         </tr> 
       </table>
@@ -36,7 +22,7 @@ function Header() {
 
 function Content() {
   return (
-      <table align = 'center' >
+      <table align='center' >
         <tr>
           <td>
             <h4> 1. Nome </h4>

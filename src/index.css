@@ -44,17 +44,14 @@ body {
     margin: 0px;
 }
 
-/*
 input[type="text"] {
-    opacity: 0.90;
-     border: 0.5px solid #676060;
-     color:#707070;
-     width: 80%;
-     height: 30px;   
-     border-radius: 10px;
-     margin-left:10px;
+    border-color: transparent;
 }
 
+input[type="password"] {
+    border-color: transparent;
+}
+/*
 input[type="text"] ~::placeholder{
     opacity: 0.83;
     font-family: SegoeUI;

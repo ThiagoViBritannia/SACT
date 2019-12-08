@@ -1,8 +1,8 @@
 import React from 'react';
 import Popup from 'reactjs-popup';
-
 import Box from './component/Box';
 import AddButton from './component/AddButton';
+import Add from './Add';
 
 import pencil from '../css/assets/edit-symbol.png';
 import bloom from '../css/assets/search-symbol.png'
@@ -27,26 +27,20 @@ class Search extends React.Component {
   }
 }
 
-export class Add extends React.Component {
-  
+export class AddCommand extends React.Component {
+  constructor(props) {
+    super(props);
+    this.props = props
+  }
   renderDialog() {
     return (<h2 className='topic' id="search">Adicionar {db[this.props.data].name}</h2>);
-  }
-
-  renderEdit(key) {
-
   }
 
   render () {
     return (
       <>
         {this.renderDialog()}
-        <Popup
-          trigger={<AddButton />}
-          modal
-          closeOnDocumentClick
-        >
-        </Popup>
+        <AddButton onClick={ev => this.props.controller(<Add type={this.props.data}/>)}/>
       </>
     )
   }
@@ -60,7 +54,7 @@ function List(props) {
           {db[props.data].types.map(
             att => <td className='data' key={att.toString()}> {value[att]} </td>
           )}
-          <td className='data'><img src={pencil}/></td>
+          <td className='data'><img src={pencil} alt='pencil'/></td>
         </tr>
       );
   });
@@ -81,7 +75,7 @@ function Project(props) {
     <div className="Lister"> 
       <h1>{db[props.type].name}</h1>
       <Search data={props.type}/>
-      <Add data={props.type} controller={props.controller}/>
+      <AddCommand data={props.type} controller={props.controller}/>
       <List data={props.type}/>
     </div>
   );
