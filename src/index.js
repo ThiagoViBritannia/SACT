@@ -1,11 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
-
 import Lister from './screen/Lister';
 import Login from './screen/Login';
-<<<<<<< HEAD
 import Seção from './screen/Seção';
 import Dash from './screen/dashboard';
 import Avcad from './screen/AddAval';
@@ -30,12 +27,6 @@ class WindowManager extends React.Component {
             windows: this.state.windows.pop()
         })
     }
-=======
-import WindowManager from './screen/WindowManager';
-
-import * as serviceWorker from './serviceWorker';
-import * as DBValues from './db/Values';
->>>>>>> 7272041cb9017ee3e2ce673eb41321f9b9fa9a0a
 
 
 var type = "administrator";

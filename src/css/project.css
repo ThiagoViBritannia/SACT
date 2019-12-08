@@ -16,7 +16,7 @@ h1{
     font-weight: lighter;
 }
 h5{
-    font: arial;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
     color: #676060;
     outline: #676060;
     font-size: 130%;
@@ -32,12 +32,12 @@ input[type="button"] {
     width: 20%;
     padding: auto;
     color:white;
-    font:arial;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
     font-weight:400;
   }
 
 h4{
-    font: arial;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
     color:#676060;
     outline:#676060;
     font-size: 130%;
@@ -45,8 +45,7 @@ h4{
     font-weight:lighter;
 }
 h2{
-    
-    font: arial;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
     color: #676060;
     outline: #676060;
     font-size: 130%;
@@ -54,7 +53,7 @@ h2{
 }
 h3{
     opacity: 0.73;
-    font-family: SegoeUI;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -88,22 +87,17 @@ input[type="text"] {
      margin-left:10px;
      margin-top: 10px;
   }
-  input[type="checkbox"] {
-     margin-left: 10%;
-     border: 0.5px solid #676060;
-     border-radius: 10px;
-     background-color: #ffffff;
-  }
   h6{
-    margin-left: 10%;
-    border-radius: 10px;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
-    color:#676060;
-    font-size: 120%;
-    font-weight: normal;
- }
+     margin-left: 10%;
+     border-radius: 10px;
+     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
+     color:#676060;
+     font-size: 120%;
+     font-weight: normal;
+  }
   body{
     background: url("../css/assets/papel.png");
+  
     background-size: 100%;
   }
 
