@@ -75,9 +75,12 @@ class AddAvaliator extends React.Component{;
         <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
 </Box>
         <h2> 6. CPF </h2>
-        <Box horizontal = "15px" vertical="10px"> 
-        <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
-</Box>
+        <h6 >
+           <div id='checkboxes'>
+              <input type='checkbox' name='info'   /> Informática <br />
+              <input type='checkbox' name='meca'   /> Mecatrônica <br />
+              <input type='checkbox' name='eletro' /> Eletronica  <br />
+            </div></h6>
         <h5> 7. Projetos que irá avaliar </h5>
         <form onSubmit={this.handleSubmit}>
         
