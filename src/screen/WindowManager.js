@@ -31,14 +31,22 @@ class WindowManager extends React.Component {
     })
   }
 
-  renderWindow() {
+  getWindow() {
     return this.state.windows[this.state.windows.length - 1]; 
+  }
+  tmpWindow() {
+    return this.getWindow().props.tmp;
   }
   renderSeaseonInfo() {
     return (
       <table>
         <tr>
-          <td><text id='logout'>Logout</text></td>
+          {
+            !this.tmpWindow()?
+              <td><text id='logout'>Logout</text></td> :
+              null
+          }
+
           <td id='x1' style={{width:'fit-content'}}><img id='adm-logo' src={adm} alt='admin' /></td>
           <td><text id='adm'>ADM</text> </td>
           
@@ -51,11 +59,15 @@ class WindowManager extends React.Component {
     return (
       <table aling='top' style={{width: '100%'}}>
         <tr>
-          <td>
-            {this.renderBack()}
-          </td>
+          {
+            !this.tmpWindow()?
+              <td id='back-container'>
+                {this.renderBack()}
+              </td> :
+              null
+          }
           <td style={{width: 'max-content'}}>
-            {this.renderWindow()}
+            {this.getWindow()}
           </td>
           <td id='season-containder'>
             {this.renderSeaseonInfo()}
