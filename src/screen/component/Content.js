@@ -8,7 +8,7 @@ export default ({ close }) => (
   
     <div className="content" >
       {" "}
-      <h1 id='close-button' align="right"  onClick={close} >X</h1>
+      <div id='close-button' align="right"  onClick={close} >X</div><br/><br/>
       A sua nova senha foi <br/>
       enviada para o e-mail <br/>
       cadastrado de acordo <br/>
