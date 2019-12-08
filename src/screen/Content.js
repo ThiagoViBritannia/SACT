@@ -1,9 +1,10 @@
 import React from "react";
 
-import  '../css/sty.css';
+import  '../css/Content.css';
+
 export default ({ close }) => (
   <div className="modal" >
- <div className="c"></div>
+  <div className="c"></div>
   
     <div className="content" >
       {" "}

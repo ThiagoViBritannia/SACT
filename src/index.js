@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+<<<<<<< HEAD
 import Lister from './screen/Lister';
 import Login from './screen/Login';
 import Seção from './screen/Seção';
@@ -30,6 +31,15 @@ class WindowManager extends React.Component {
 
 
 var type = "administrator";
+=======
+
+import Lister from './screen/Lister';
+import Login from './screen/Login';
+import WindowManager from './screen/WindowManager';
+
+import * as serviceWorker from './serviceWorker';
+import * as DBValues from './db/Values';
+>>>>>>> bde4b080c669b5ec726e280a98c327232c4db0f0
 
 class Main extends WindowManager {
   constructor(props) {
