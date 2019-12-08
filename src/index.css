@@ -38,12 +38,6 @@ body {
     padding: 0px;
 }
 
-#back {
-    display: inline;
-    padding: 0px;
-    margin: 0px;
-}
-
 input[type="text"] {
     border-color: transparent;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-import  '../css/Content.css';
+import  '../../css/Content.css';
 
 export default ({ close }) => (
   <div className="modal" >

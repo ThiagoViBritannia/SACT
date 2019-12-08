@@ -1,7 +1,7 @@
 import React from 'react';
 import  '../css/Content.css';
 import logo from '../css/assets/aaa.png';
-import Content from './Content.js';
+import Content from './component/Content.js';
 import Popup from 'reactjs-popup'
 import Dashboard from './Dashboard';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import  '../css/addava.css';
+import  '../css/AddAvaliator.css';
 import mais from '../css/assets/mais.png';
 import lix from '../css/assets/lix.png';
 import Box from './component/Box';
