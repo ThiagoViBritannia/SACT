@@ -1,9 +1,11 @@
 import React from 'react';
-import  '../css/Content.css';
 import logo from '../css/assets/aaa.png';
 import Content from './component/Content.js';
 import Popup from 'reactjs-popup'
 import Dashboard from './Dashboard';
+
+import '../css/Login.css'
+
 
 class Login extends React.Component {
   constructor(props) {
@@ -28,12 +30,12 @@ class Login extends React.Component {
         </div>
       
       <div className="usuario" align ="center">
-        <input type="text" name="usuario"  placeholder=" CPF"/>
       </div>
       <div className="senha" align ="center">
-        <input type="password" name="senha" id="password" placeholder=" Senha"/>
+        <input type="text" className='input-field'  name="usuario" id='user'  placeholder=" CPF"/>
+        <input type="password" className='input-field' name="senha" id="password" placeholder=" Senha"/>
         <div >
-        <Popup modal trigger={<text>Esqueceu a senha?</text>}>
+        <Popup modal trigger={<text id='pass-forgot'>Esqueceu a senha?</text>}>
           {close => <Content close={close} />}
         </Popup>
         </div>

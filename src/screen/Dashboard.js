@@ -25,7 +25,7 @@ class Dashboard extends React.Component{
   render(){
     return (
       <div className="App">
-        <table  align = "center" style={{width:"100%"}}>
+        <table className='Table'  align = "center" style={{width:"100%"}}>
           <tr align = "center">
             <td  align = "center" >
               <h1 align="center"  style={{width:"60%", height:"60%"}}>

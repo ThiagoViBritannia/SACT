@@ -3,7 +3,6 @@
   height: 56.1%;
   object-fit: contain;
   margin-top: 2%;
-  display: block;
   margin-left: auto;
   margin-right: auto;
 
@@ -18,7 +17,64 @@
   margin-left: auto;
   margin-right: auto
 }
+.input-field {
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    color: gray;
+    width: 25.5%;
+    height: 30px;
+    background: #ffff;
+    font-size: 100%;
+}
 
+#user {
+    display: block;
+    width: 25.5%;
+}
+
+#password {
+    border: 0.5px solid gray;
+    margin-top:1.7%;
+}
+
+
+.input-field ~::placeholder {
+  width: 313px;
+  height: 40px;
+  opacity: 0.83;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.34;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
+}
+
+#password ~::placeholder{
+  background: #ffff;   
+}
+
+  input[type="button"]  {
+    border-radius: 10px;
+    color: #f5f5f5;
+    background-color: #0000fb;
+    width: 7.8%;
+    height: 40px;
+    font-size: 100%;
+    margin-top: 2%;
+    
+  }
+#pass-forgot{
+    margin-left: 17%;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.32;
+    letter-spacing: normal;
+    text-align: right;
+    color: #707070;
+    font-size: 80%;
+}
 /*
 input[type="text"] {
     border: 0.5px solid  gray;
