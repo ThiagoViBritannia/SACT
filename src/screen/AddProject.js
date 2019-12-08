@@ -1,5 +1,5 @@
 import React from 'react';
-import  '../css/project.css';
+import  '../css/AddProject.css';
 import Box from '../screen/component/Box';
 function App() {
   return (
@@ -12,8 +12,9 @@ function App() {
       <tr >
         <td style={{}}>
         <h2> 1. Nome</h2>
-        <input type="text" name="projeto" className="Field" placeholder = "" /> 
-
+        <Box horizontal = "15px" vertical="10px"> 
+          <input type="text" name="projeto" className="Field" placeholder = "" /> 
+        </Box>
         <h2> 2. Area de Atuação </h2>
         <h6 >
            <div id='checkboxes'>

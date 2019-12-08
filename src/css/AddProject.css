@@ -4,7 +4,6 @@ table{
 }
 
 h1{
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
     color: #676060;
     font-size: 250%;
     margin-top: 5%;
@@ -12,7 +11,6 @@ h1{
     font-weight: lighter;
 }
 h5{
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
     color: #676060;
     outline: #676060;
     font-size: 130%;
@@ -28,12 +26,10 @@ input[type="button"] {
     width: 20%;
     padding: auto;
     color:white;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
     font-weight:400;
   }
 
 h4{
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
     color:#676060;
     outline:#676060;
     font-size: 130%;
@@ -41,7 +37,6 @@ h4{
     font-weight:lighter;
 }
 h2{
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
     color: #676060;
     outline: #676060;
     font-size: 130%;
@@ -49,7 +44,6 @@ h2{
 }
 h3{
     opacity: 0.73;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -61,7 +55,6 @@ h3{
 
 input[type="text"] ~::placeholder{
     opacity: 0.83;
-    font-family: SegoeUI;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -74,26 +67,22 @@ input[type="text"] ~::placeholder{
   }
   
 input[type="text"] {
+
     opacity: 0.90;
-     border: 0.5px solid #676060;
-     color:#707070;
-     width: 80%;
-     height: 30px;   
-     border-radius: 10px;
-     margin-left:10px;
-     margin-top: 10px;
-  }
-  h6{
-     margin-left: 10%;
-     border-radius: 10px;
-     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
-     color:#676060;
-     font-size: 120%;
-     font-weight: normal;
-  }
-  body{
-    background: url("../css/assets/papel.png");
-  
-    background-size: 100%;
-  }
+    border: 0.5px solid #676060;
+    color:#707070;
+    width: 80%;
+    height: 30px;   
+    border-radius: 10px;
+    margin-left:10px;
+    margin-top: 10px;
+}
+
+h6{
+    margin-left: 10%;
+    border-radius: 10px;
+    color:#676060;
+    font-size: 120%;
+    font-weight: normal;
+}
 

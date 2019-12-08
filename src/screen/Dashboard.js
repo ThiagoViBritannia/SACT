@@ -28,7 +28,7 @@ class Dashboard extends React.Component{
         <table className='Table'  align = "center" style={{width:"100%"}}>
           <tr align = "center">
             <td  align = "center" >
-              <h1 align="center"  style={{width:"60%", height:"60%"}}>
+              <h1 align="center" className='dash-view'  style={{width:"60%", height:"60%"}}>
                 <img align="center" src={trofeu} style={{width:"100%", marginTop:"10% "}}/><br></br>
                 
                 <h2 align="center" style={{
@@ -42,7 +42,7 @@ class Dashboard extends React.Component{
             </td>
             
             <td align = "center" style={{}}>
-              <h1 align="center" style={{width:"150%"}}>
+              <h1 className='dash-view' align="center" style={{width:"150%"}}>
                 <div className="oi" align="left" style={{color:"#0004ff"}}>
                   <img  src={r} style={{width:"6%"}} /> 
                   Relatórios
@@ -59,15 +59,15 @@ class Dashboard extends React.Component{
           </tr>
           <tr>
             <td>
-              <h1 align="center"  style={style}>
+              <h1 className='dash-view' align="center"  style={style}>
                 Fichas já avaliadas
               </h1>
             </td>
             <td align="center">
-              <h1 align="center"  style={style}>Avaliadores já concluiram</h1>
+              <h1 className='dash-view' align="center"  style={style}>Avaliadores já concluiram</h1>
             </td>
             <td align="center">
-              <h1  style={{width:"80%"}}>
+              <h1 className='dash-view' style={{width:"80%"}}>
                 <div className="oi" align="left" style={{color:"#0004ff"}}>
                   <img  src={s} style={{width:"15%"}} /> 
                   Informações

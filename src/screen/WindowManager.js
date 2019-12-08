@@ -26,6 +26,15 @@ class WindowManager extends React.Component {
   }
 
   nextWindow(window) {
+    if (this.tmpWindow()) {
+      if (this.state.windows.length == 1) {
+        this.state.windows.pop()
+      } else {
+        this.setState({
+          windows: this.state.windows.slice(0, this.state.windows.length - 1),
+        })
+      }
+    }
     this.setState({
       windows: this.state.windows.concat(window)
     })
@@ -34,9 +43,11 @@ class WindowManager extends React.Component {
   getWindow() {
     return this.state.windows[this.state.windows.length - 1]; 
   }
+
   tmpWindow() {
     return this.getWindow().props.tmp;
   }
+
   renderSeaseonInfo() {
     return (
       <table>
