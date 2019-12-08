@@ -46,56 +46,49 @@ class AddAval extends React.Component{;
     
   <div align="center">
 <h1 align="center">
-  <u>Cadastro de Avaliadores</u></h1>
+  Cadastro de Avaliadores
+    
+  <hr style={{width:'100%',marginTop:"-0.6%"}} ></hr>
+  </h1>
 </div>
-     <table align = "center" >
+     <table align = "center" style={{width:"100%"}}>
       <tr >
         <td style={{width:"50%"}}>
         <h2> 1. Nome</h2>
-        <Box horizontal = "15px" vertical="10px"> 
         <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
-</Box>
         <h2> 2. Area de Atuação </h2>
-        <Box horizontal = "15px" vertical="10px"> 
         <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
-</Box>
         
         <h2> 3. Instituição que representa </h2>
-        <Box horizontal = "15px" vertical="10px"> 
         <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
-</Box>
         
         <h2> 4. Telefone </h2>
-         <Box horizontal = "15px" vertical="10px"> 
         <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
-</Box>
         
         <h2> 5. E-mail </h2>
-        <Box horizontal = "15px" vertical="10px"> 
         <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
-</Box>
         <h2> 6. CPF </h2>
         <h6 >
-           <div id='checkboxes'>
+           <div id='checkboxes'style={{marginTop:"-20%"}}>
               <input type='checkbox' name='info'   /> Informática <br />
               <input type='checkbox' name='meca'   /> Mecatrônica <br />
               <input type='checkbox' name='eletro' /> Eletronica  <br />
-            </div></h6>
-        <h5> 7. Projetos que irá avaliar </h5>
-        <form onSubmit={this.handleSubmit}>
+            </div></h6></td>
+            <td  style={{width:"50%"}}>
+        <h2 style={{position:"static"}}> 7. Projetos que irá avaliar </h2>
+        <form onSubmit={this.handleSubmit} >
         
         {this.state.shareholders.map((shareholder, idx) => (
           <div className="shareholder">
-       <h2>  {`${idx + 1}ª `}
-       <Box horizontal = "15px" vertical="10px"> 
             <input
               type="text"
               value={shareholder.name}
               name="usuario"
               className="field"
               onChange={this.handleShareholderNameChange(idx)}
-            /></Box>
-            <img src={lix} style={{width:"4%"}} onClick={this.handleRemoveShareholder(idx)}></img></h2>
+              
+              ></input>
+            <img  align = "right" src={lix} style={{width:"4.5%", marginTop:"2.8%", marginLeft:"-15%"}} onClick={this.handleRemoveShareholder(idx)}></img>
              </div>
         ))}
         <div  align = "center">

@@ -29,19 +29,20 @@ h2 {
 }
 body {
     background-image: url('./css/assets/paper.png');
-    background-size: 100%;
-}
+    background-size: 100%;}
 
 .root {
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 
 #back {
     display: inline;
     padding: 0px;
     margin: 0px;
+    margin-top: -80%;
 }
 
 input[type="text"] {
