@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-
 import Lister from './screen/Lister';
 import Login from './screen/Login';
 import WindowManager from './screen/WindowManager';
