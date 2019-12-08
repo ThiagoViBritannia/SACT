@@ -3,6 +3,7 @@ import Popup from 'reactjs-popup';
 import Box from './component/Box';
 import AddButton from './component/AddButton';
 import Add from './Add';
+import AddSeason from './AddSeason';
 
 import pencil from '../css/assets/edit-symbol.png';
 import bloom from '../css/assets/search-symbol.png'
@@ -10,7 +11,7 @@ import bloom from '../css/assets/search-symbol.png'
 import '../css/Lister.css';
 
 import * as db from '../db/Table';
-
+import * as DBValues from '../db/Values';
 
 
 class Search extends React.Component {
@@ -32,15 +33,27 @@ export class AddCommand extends React.Component {
     super(props);
     this.props = props
   }
-  renderDialog() {
-    return (<h2 className='topic' id="search">Adicionar {db[this.props.data].name}</h2>);
+  renderDialog(name) {
+    return (<h2 className='topic' id="search">Adicionar {name}</h2>);
   }
 
+  
+
   render () {
+    if (this.props.data == DBValues.RECORD)
+      return (
+        <>
+          {this.renderDialog('Seção')}
+          <AddButton onClick={() => this.props.controller(<AddSeason controller={this.props.controller}/>)} style={{display: 'inline'}}/>
+     
+          {this.renderDialog('Critério')}
+          <AddButton onClick={() => this.props.controller(<></>)}/>
+        </>
+      );
     return (
       <>
-        {this.renderDialog()}
-        <AddButton onClick={ev => this.props.controller(<Add type={this.props.data}/>)}/>
+        {this.renderDialog(db[this.props.data].name)}
+        <AddButton onClick={() => this.props.controller(<Add type={this.props.data}/>)}/>
       </>
     )
   }

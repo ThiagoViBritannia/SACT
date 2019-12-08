@@ -1,0 +1,22 @@
+
+#back {
+    float: inline-start;
+}
+
+#logout {
+    text-align: end;
+}
+
+#adm-logo {
+    padding: 0px;
+    margin: 0px;
+}
+
+#adm {
+    text-align: left;
+}
+
+#season-containder {
+    height: fit-content;
+    width: min-content;
+}

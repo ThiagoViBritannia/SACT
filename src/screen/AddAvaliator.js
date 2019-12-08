@@ -1,9 +1,9 @@
 import React from 'react';
-import  '../css/addava.css';
+import  '../css/AddAvaliator.css';
 import mais from '../css/assets/mais.png';
 import lix from '../css/assets/lix.png';
-import Box from '../screen/component/Box';
-class AddAval extends React.Component{;
+import Box from './component/Box';
+class AddAvaliator extends React.Component{;
   constructor() {
     super();
     this.state = {
@@ -110,4 +110,4 @@ class AddAval extends React.Component{;
       
 </div>
     );}}
-    export default AddAval;
+    export default AddAvaliator;

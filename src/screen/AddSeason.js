@@ -1,8 +1,8 @@
 import React from 'react';
-import  '../css/sty2.css';
+import  '../css/AddSeason.css';
 import mais from '../css/assets/mais.png';
 import lix from '../css/assets/lix.png';
-class Seção extends React.Component{;
+class AddSeason extends React.Component{;
   constructor() {
     super();
     this.state = {
@@ -79,4 +79,4 @@ class Seção extends React.Component{;
     </div>
 
     );}}
-    export default Seção;
+    export default AddSeason;
