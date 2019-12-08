@@ -20,8 +20,8 @@ class Search extends React.Component {
       <div className='search-projects'>
         <h2 className='topic'>Pesquisar {db[this.props.data].name}</h2>
         <Box left='15px' top='10px' bottom='10px' right='5px' id='search-box'>
-          <input className='searcher' type='text'/>
-          <img style={{display: 'inline'}} alt='search' src={bloom}></img>
+          <input className='searcher' type='text' />
+          <img style={{display: 'inline'}} style={{width:"4%"}}alt='search' src={bloom}></img>
         </Box>
       </div>
     );

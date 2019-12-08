@@ -29,7 +29,7 @@ input[type="button"] {
     font-size: 18px;
     background-color:#0000fc;
     height: 40px;
-    width: 60%;
+    width: 40%;
     padding: auto;
     color:white;
     font:arial;
@@ -102,7 +102,7 @@ input[type="text"] {
      border-radius: 10px;
      background-color: #ffffff;
   }
-  h6{
+  check{
     margin-left: 10%;
     border-radius: 10px;
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
@@ -110,4 +110,8 @@ input[type="text"] {
     font-size: 120%;
     font-weight: normal;
  }
+  body{
+    background: url("../css/assets/papel.png");
+    background-size: 100%;
+  }
 

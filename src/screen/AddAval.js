@@ -1,9 +1,9 @@
 import React from 'react';
-import  '../css/AddAvaliator.css';
+import  '../css/addava.css';
 import mais from '../css/assets/mais.png';
 import lix from '../css/assets/lix.png';
-import Box from './component/Box';
-class AddAvaliator extends React.Component{;
+import Box from '../screen/component/Box';
+class AddAval extends React.Component{;
   constructor() {
     super();
     this.state = {
@@ -56,10 +56,13 @@ class AddAvaliator extends React.Component{;
         <td style={{width:"50%"}}>
         <h2> 1. Nome</h2>
         <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
-        <h2> 2. Area de Atuação </h2>
-        <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
-        
-        <h2> 6. CPF</h2>
+        <h2> 6. CPF </h2> 
+           <div id='checkboxes'style={{marginTop:"-20%"}}>
+              <input type='checkbox' name='info'   /> Informática <br />
+              <input type='checkbox' name='meca'   /> Mecatrônica <br />
+              <input type='checkbox' name='eletro' /> Eletronica  <br />
+            </div>
+        <h2> 3. Instituição que representa </h2>
         <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
         
         <h2> 4. Telefone </h2>
@@ -67,13 +70,9 @@ class AddAvaliator extends React.Component{;
         
         <h2> 5. E-mail </h2>
         <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
-        <h2> 3. Instituição que representa  </h2>
-        <h6 >
-           <div id='checkboxes'style={{marginTop:"-20%"}}>
-              <input type='checkbox' name='info'   /> Informática <br />
-              <input type='checkbox' name='meca'   /> Mecatrônica <br />
-              <input type='checkbox' name='eletro' /> Eletronica  <br />
-            </div></h6></td>
+        <h2> 2. Area de Atuação </h2>
+        <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
+       </td>
             <td  style={{width:"50%"}}>
         <h2 style={{position:"static"}}> 7. Projetos que irá avaliar </h2>
         <form onSubmit={this.handleSubmit} >
@@ -92,7 +91,7 @@ class AddAvaliator extends React.Component{;
              </div>
         ))}
         <div  align = "center">
-       <img align = "center"src={mais} style={{width:"7%"}}
+       <img align = "center"src={mais} style={{width:"5%"}}
           type="button"
           onClick={this.handleAddShareholder}
           className="small"
@@ -103,11 +102,11 @@ class AddAvaliator extends React.Component{;
         <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
 
       <div className="button" align="right" >
-<input type="button"name="login" id="login" value="Salvar" style={{width:"20%"}}></input></div>
+<input type="button"name="login" id="login" value="Salvar"></input></div>
     </td>
         </tr>
       </table>
       
 </div>
     );}}
-    export default AddAvaliator;
+    export default AddAval;
