@@ -44,26 +44,23 @@ class AddSeason extends React.Component{;
     <div className="App">
       
   <div align="center">
-<h1 align="center" style={{marginLeft:"10%"}}>
-  <u>Cadastro de Seção</u></h1>
-</div> <table align = "center" style={{marginTop:"5%",width:"70%"}}>
-      <tr align="center">
-        <td style={{width:"100%"}}>
- 
+<h3>
+  <u>Cadastro de Seção</u></h3>
+</div>
         <form onSubmit={this.handleSubmit}>
         
         {this.state.shareholders.map((shareholder, idx) => (
           <div className="shareholder">
-       <h2>  {`${idx + 1}ª Seção`}
+       <h2>{`${idx + 1}ª Seção`}</h2>
             <input
               type="text"
               value={shareholder.name}
               onChange={this.handleShareholderNameChange(idx)}
-            />
-            <img src={lix} style={{width:"1.9%"}} onClick={this.handleRemoveShareholder(idx)}></img></h2>
+              style={{width:"80%"}} 
+            /><img src={lix}  style={{width:"3%"}} onClick={this.handleRemoveShareholder(idx)}></img>
              </div>
         ))}
-       <img src={mais} style={{width:"5%"}}
+       <img src={mais} style={{width:"4%",marginLeft:"40%", marginTop:"5%"}}
           type="button"
           onClick={this.handleAddShareholder}
           className="small"
@@ -72,11 +69,8 @@ class AddSeason extends React.Component{;
       </form>
       <div className="button" align="right">
 <input type="button"name="login" id="login" value="Salvar"></input></div>
-    </td>
-        </tr>
-      </table>
+      </div>
       
-    </div>
 
     );}}
     export default AddSeason;
