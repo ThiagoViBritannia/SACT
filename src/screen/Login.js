@@ -41,7 +41,7 @@ class Login extends React.Component {
         </div>
       </div>  
         <div className="button" align="center" >
-          <input onClick={() => this.props.controller(<Dashboard />)} type="button" name="login" id="login" value="Entrar" style={{width:"7.8%"}} />
+          <input onClick={() => this.props.controller(<Dashboard controller={this.props.controller}/>)} type="button" name="login" id="login" value="Entrar" style={{width:"7.8%"}} />
         </div>
       </div> 
     );

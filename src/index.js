@@ -14,7 +14,7 @@ class Main extends WindowManager {
     super(props);
     this.state = { 
       windows: [
-        <Login tmp controller={ev => this.nextWindow(<Dashboard controller={this.nextWindow}/>)}/>,
+        <Login tmp controller={this.nextWindow}/>,
       ] 
     };   
   }
