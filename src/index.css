@@ -29,10 +29,12 @@ h2 {
 }
 body {
     background-image: url('./css/assets/paper.png');
-    background-size: 100%;}
-
-.root {
+    background-size: 100%;
+}
+html {
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial;
+}
+.root {
     margin: 0px;
     padding: 0px;
     overflow: hidden;

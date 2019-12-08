@@ -4,6 +4,7 @@ import '../css/WindowManager.css';
 
 import exit from '../css/assets/exit.png';
 import adm from '../css/assets/admin.png';
+import Login from './Login';
 
 
 
@@ -19,6 +20,14 @@ class WindowManager extends React.Component {
     );
   }
   handleBackWindow(e) {
+    if (this.logoutOnBackWindow()) {
+      this.setState({
+        windows: [
+          <Login tmp controller={this.nextWindow}/>
+        ]
+      })
+      return;
+    }
     if (this.state.windows.length > 1)
       this.setState({
         windows: this.state.windows.slice(0, this.state.windows.length - 1),
@@ -38,6 +47,11 @@ class WindowManager extends React.Component {
     this.setState({
       windows: this.state.windows.concat(window)
     })
+  }
+
+
+  logoutOnBackWindow() {
+    return this.getWindow().props.logoutOnBack;
   }
 
   getWindow() {

@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
+  
 import Login from './screen/Login';
 import WindowManager from './screen/WindowManager';
-import Dashboard from './screen/Dashboard';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -13,7 +13,7 @@ class Main extends WindowManager {
     super(props);
     this.state = { 
       windows: [
-        <Login tmp controller={this.nextWindow}/>,
+        <Login  tmp controller={this.nextWindow}/>,
       ] 
     };   
   }
