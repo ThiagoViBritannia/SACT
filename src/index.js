@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
-
-import Login from './screen/Login';
+import Login from './screen/AddSeason';
 import WindowManager from './screen/WindowManager';
 import Dashboard from './screen/Dashboard';
 

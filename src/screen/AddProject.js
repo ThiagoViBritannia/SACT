@@ -6,10 +6,11 @@ function App() {
     <div className="App">
     
 <h1 align="center">
-  <u>Cadastro de projetos</u></h1>
-<table align = "center" >
+  Cadastro de projetos
+  <hr style={{width:'50%',marginTop:"-0.6%"}} ></hr></h1>
+<table align = "center" style={{width:"100%"}}>
       <tr >
-        <td style={{width:"50%"}}>
+        <td style={{}}>
         <h2> 1. Nome</h2>
         <Box horizontal = "15px" vertical="10px"> 
           <input type="text" name="projeto" className="Field" placeholder = "" /> 
@@ -17,28 +18,28 @@ function App() {
         <h2> 2. Area de Atuação </h2>
         <h6 >
            <div id='checkboxes'>
-              <input type='checkbox' name='info'   /> Informática <br />
-              <input type='checkbox' name='meca'   /> Mecatrônica <br />
-              <input type='checkbox' name='eletro' /> Eletronica  <br />
+              <h6></h6><input type='checkbox' name='info'   /> Informática <br />
+              <h6></h6><input type='checkbox' name='meca'   /> Mecatrônica <br />
+              <h6></h6><input type='checkbox' name='eletro' /> Eletronica  <br />
             </div></h6>
-        <h2> 3. Turma </h2>
-          <Box horizontal = "15px" vertical="10px"> 
-            <input type="text" name="projeto" className="Field" placeholder = "" /> 
-          </Box>
+        <h2> 3. Turma </h2> 
+        <input type="text" name="projeto" className="Field" placeholder = "" /> 
+
         </td><td >
         <h5> 4. Integrantes </h5>
-       <h7>    <Box horizontal = "15px" vertical="10px"> 
+       <h7>   
+        <input type="text" name="projeto" className="Field" placeholder = "" /> <br/>
+</h7>
+       <h7 style={{marginTop:"100%"}}>  
+        <input type="text" name="projeto" className="Field" placeholder = "" style={{marginTop:"5%"}}/> <br/>
+   </h7>
+       <h7>     
+         
+        <input type="text" name="projeto" className="Field" placeholder = "" style={{marginTop:"5%"}}/> <br/>
+ </h7>
+       <h5> 9. Observações </h5> 
         <input type="text" name="projeto" className="Field" placeholder = "" /> 
-</Box> </h7>
-       <h7 style={{marginTop:"100%"}}>  <Box horizontal = "15px" vertical="10px"> 
-        <input type="text" name="projeto" className="Field" placeholder = "" style={{marginTop:"5%"}}/> 
-</Box> />  </h7>
-       <h7>     <Box horizontal = "15px" vertical="10px"> 
-        <input type="text" name="projeto" className="Field" placeholder = "" style={{marginTop:"5%"}}/> 
-</Box>  </h7>
-       <h5> 9. Observações </h5> <Box horizontal = "15px" vertical="10px"> 
-        <input type="text" name="projeto" className="Field" placeholder = "" /> 
-</Box>  </td>
+</td>
         </tr><tr>
         <td> </td><td>
           
