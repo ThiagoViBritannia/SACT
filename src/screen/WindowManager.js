@@ -14,9 +14,10 @@ class WindowManager extends React.Component {
     );
   }
   handleBackWindow(e) {
-    this.setState({
-      windows: this.state.windows.slice(0, this.state.windows.length - 1),
-    })
+    if (this.state.windows.length > 1)
+      this.setState({
+        windows: this.state.windows.slice(0, this.state.windows.length - 1),
+      })
   }
 
   nextWindow(window) {

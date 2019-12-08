@@ -15,8 +15,7 @@ class Main extends WindowManager {
     super(props);
     this.state = { 
       windows: [
-        <Login controller={ev => this.nextWindow(<Lister type={DBValues.ADMIN} controller={this.nextWindow}/>)}/>,
-        <Dashboard controller={this.nextWindow}/>
+        <Login controller={ev => this.nextWindow(<Dashboard controller={this.nextWindow}/>)}/>,
       ] 
     };   
   }

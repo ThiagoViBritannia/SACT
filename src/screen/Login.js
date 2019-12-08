@@ -3,9 +3,12 @@ import  '../css/Content.css';
 import logo from '../css/assets/aaa.png';
 import Content from './Content.js';
 import Popup from 'reactjs-popup'
+import Dashboard from './Dashboard';
+
 class Login extends React.Component {
   constructor(props) {
     super(props);
+    this.props = props;
     this.state = { open: false };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
@@ -36,7 +39,7 @@ class Login extends React.Component {
         </div>
       </div>  
         <div className="button" align="center" >
-          <input type="button" name="login" id="login" value="Entrar" style={{width:"7.8%"}} />
+          <input onClick={() => this.props.controller(<Dashboard />)} type="button" name="login" id="login" value="Entrar" style={{width:"7.8%"}} />
         </div>
       </div> 
     );
