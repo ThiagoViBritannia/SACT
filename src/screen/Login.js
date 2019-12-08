@@ -21,8 +21,9 @@ class Login extends React.Component {
     return(
       <div className="App" >
         <div align="center">
-        <img src={logo}></img>
-      </div>
+          <img src={logo} />
+        </div>
+      
       <div className="usuario" align ="center">
         <input type="text" name="usuario"  placeholder=" CPF"/>
       </div>

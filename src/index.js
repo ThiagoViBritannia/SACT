@@ -5,6 +5,7 @@ import './index.css';
 import Lister from './screen/Lister';
 import Login from './screen/Login';
 import WindowManager from './screen/WindowManager';
+import Dashboard from './screen/Dashboard';
 
 import * as serviceWorker from './serviceWorker';
 import * as DBValues from './db/Values';
@@ -15,6 +16,7 @@ class Main extends WindowManager {
     this.state = { 
       windows: [
         <Login controller={ev => this.nextWindow(<Lister type={DBValues.ADMIN} controller={this.nextWindow}/>)}/>,
+        <Dashboard controller={this.nextWindow}/>
       ] 
     };   
   }
