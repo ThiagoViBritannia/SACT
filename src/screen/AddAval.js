@@ -56,7 +56,7 @@ class AddAval extends React.Component{;
         <td style={{width:"50%"}}>
         <h2> 1. Nome</h2>
         <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
-        <h2> 2. Area de Atuação </h2>
+        <h2> 6. CPF </h2> 
            <div id='checkboxes'style={{marginTop:"-20%"}}>
               <input type='checkbox' name='info'   /> Informática <br />
               <input type='checkbox' name='meca'   /> Mecatrônica <br />
@@ -70,7 +70,7 @@ class AddAval extends React.Component{;
         
         <h2> 5. E-mail </h2>
         <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
-        <h2> 6. CPF </h2>
+        <h2> 2. Area de Atuação </h2>
         <input type="text" name="Avaliador" className="Field" placeholder = "" /> 
        </td>
             <td  style={{width:"50%"}}>
