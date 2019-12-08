@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import './index.css';
 
 
@@ -12,6 +11,7 @@ import * as serviceWorker from './serviceWorker';
 import * as DBValues from './db/Values';
 
 
+var type = "administrator";
 
 class Main extends WindowManager {
   constructor(props) {
