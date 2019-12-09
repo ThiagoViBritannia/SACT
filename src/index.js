@@ -8,12 +8,14 @@ import WindowManager from './screen/WindowManager';
 
 import * as serviceWorker from './serviceWorker';
 
+
+
 class Main extends WindowManager {
   constructor(props) {
     super(props);
     this.state = { 
       windows: [
-        <Login  tmp controller={this.nextWindow}/>,
+        <Login tmp controller={this.nextWindow}/>,
       ] 
     };   
   }

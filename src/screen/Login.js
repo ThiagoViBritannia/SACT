@@ -1,10 +1,14 @@
 import React from 'react';
-import logo from '../css/assets/aaa.png';
-import Content from './component/Content.js';
-import Popup from 'reactjs-popup'
+import Popup from 'reactjs-popup';
 import Dashboard from './Dashboard';
+import Content from './component/Content.js';
+
+import logo from '../css/assets/aaa.png';
 
 import '../css/Login.css'
+
+import * as Values from '../db/Values';
+
 
 
 class Login extends React.Component {
@@ -22,11 +26,15 @@ class Login extends React.Component {
     this.setState({ open: false });
   }
 
+  onTryLogin  = () => {
+    this.props.controller(<Dashboard logoutOnBack controller={this.props.controller}/>)
+  }
+
   render() {
     return(
       <div className="App" >
         <div align="center">
-          <img src={logo} />
+          <img src={logo} alt='logo'/>
         </div>
       
       <div className="usuario" align ="center">
@@ -40,8 +48,8 @@ class Login extends React.Component {
         </Popup>
         </div>
       </div>  
-        <div className="button" align="center" >
-          <input onClick={() => this.props.controller(<Dashboard logoutOnBack controller={this.props.controller}/>)} type="button" name="login" id="login" value="Entrar" style={{width:"7.8%"}} />
+        <div  align="center" >
+          <input className="button" onClick={this.onTryLogin} type="button" name="login" id="login" value="Entrar" style={{width:"7.8%"}} />
         </div>
       </div> 
     );

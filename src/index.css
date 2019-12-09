@@ -45,6 +45,15 @@ html {
     padding: 0px;
     margin: 0px;
 }
+input[type="button"] {
+    border: 0px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color:#0000fc;
+    color:white;
+    font:arial;
+    font-weight:400;
+}
 
 input[type="text"] {
     border-color: transparent;
